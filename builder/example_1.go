@@ -84,7 +84,7 @@ func (b *PersonBuilder) Build() *Person {
 	return b.person
 }
 
-func main() {
+func RunExample1() {
 	pb := NewPersonBuilder()
 	pb.Lives().
 		At("Bangalore").
