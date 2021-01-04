@@ -51,8 +51,8 @@ func (eb *EmailBuilder) Subject(value string) *EmailBuilder {
 	return eb
 }
 
-//RunExample2 to run example on builder parameters
-func RunExample2() {
+//RunBuilderParamter example
+func RunBuilderParamter() {
 	SendEmail(func(b *EmailBuilder) {
 		b.
 			To("World@gmail.com").
