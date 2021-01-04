@@ -2,9 +2,10 @@ package main
 
 import "fmt"
 
-// Builder facets
+// Example - Builder facets
 
-type person struct {
+//Person struct
+type Person struct {
 	// Personal details
 	name, address, pin string
 	// Job details
@@ -14,7 +15,7 @@ type person struct {
 
 //PersonBuilder struct
 type PersonBuilder struct {
-	person *person
+	person *Person
 }
 
 //PersonAddressBuilder facet of PersonBuilder
@@ -29,7 +30,7 @@ type PersonJobBuilder struct {
 
 //NewPersonBuilder constructor for PersonBuilder
 func NewPersonBuilder() *PersonBuilder {
-	return &PersonBuilder{person: &person{}}
+	return &PersonBuilder{person: &Person{}}
 }
 
 //Lives chains to type *PersonBuilder and returns a *PersonAddressBuilder
@@ -79,7 +80,7 @@ func (j *PersonJobBuilder) WithSalary(salary int) *PersonJobBuilder {
 }
 
 //Build builds a person from PersonBuilder
-func (b *PersonBuilder) Build() *person {
+func (b *PersonBuilder) Build() *Person {
 	return b.person
 }
 
