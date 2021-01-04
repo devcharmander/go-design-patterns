@@ -1,1 +1,2 @@
-# go-design-patterns
+# WIP
+## Design pattern implementation using go
