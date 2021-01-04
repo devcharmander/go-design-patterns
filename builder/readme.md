@@ -1,5 +1,5 @@
 ## Motivation
- - Some object creation are simple and need just a constructor call
+ - Some object creations are simple and need just a constructor call
  - Other objects need a lot of ceremony to create 
  - We need some sort of way to build an object piece-by-piece
 
